@@ -1,0 +1,105 @@
+.Login_Container{
+    width: 100%;
+    height: 800px;
+    background-color: rgba(221, 224, 226, 0.347);  
+}
+.Image-Container{
+    position: relative;
+}
+.LoginBgImage{
+    width: 100%;
+}
+
+.LogoImgContainer{
+    position: absolute;
+    z-index: 1;
+    top:10% ;
+    left :48% ;
+}
+.login_card{
+    width: 23%;
+    height: 50%;
+    margin: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 30px;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+    left: 37%;
+    top: 30%;
+    background-color: white;
+}
+
+.Project_title{
+    color: white; 
+    font-size: 20px;
+    position: relative;
+    left: -90px;
+}
+
+
+.loginCard_title {
+    font-size: 18px;
+    margin-left: 100px;
+}
+
+.input_label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.Forgot_pwd{
+    margin-top: -10px;
+    margin-left: 240px;
+    color: #2e65c2;
+}
+
+.login_card input {
+    width: 100%;
+    height: 25px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.login_card button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 18px;
+    padding: 10px 60px;
+    cursor: pointer;
+    margin-left: 130px;
+}
+
+.login_card button:hover {
+    background-color: #0056b3;
+}
+
+.Invalid_div{
+    display:none ;
+    text-align: center;
+    color: red;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-with-image {
+    position: relative;
+}
+
+.input-image {
+    position: absolute;
+    right: 10px;
+    /* Adjust this value to control the image's position */
+    top: 50%;
+    /* Adjust this value to vertically center the image */
+    transform: translateY(-50%);
+    cursor: pointer;
+    /* Add a pointer cursor to indicate interactivity */
+}
