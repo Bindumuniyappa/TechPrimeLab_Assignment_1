@@ -12,7 +12,7 @@
 
 #project_list {
     width: 100%;
-    background-color: black;
+    background-color: white;
     height: auto;
     display: block;
 }
@@ -51,6 +51,7 @@
 
 #filter_sort {
     border-radius: 10px;
+
     display: flex;
     justify-content: space-around;
     height: 60px;

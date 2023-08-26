@@ -121,7 +121,7 @@ const ProjectList = () => {
                  </div>
                </div>
               <div id="table_div">
-                <table>
+                <table border={1}>
                   <thead>
                     <tr>
                       <th>Project Name</th>

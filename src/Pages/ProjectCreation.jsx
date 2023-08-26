@@ -168,7 +168,7 @@ if (
             <div id="create_project">
               <div id="create_project_child">
                 <div id="create_project_child1">
-                  <input name="theme" type="text" placeholder='Enter Project Theme' onChange={handleChange} />
+                  <input name="theme" type="text" placeholder='Enter Project Theme' onChange={handleChange}/>
                   {isThemeValid?<p>Project theme required</p>:<></>}
                 </div>
                 <div id="create_project_child2">
@@ -177,12 +177,13 @@ if (
               </div>
               <div id='create_project_child_two'>
                 <div className='label'>
-                     <p >Reason</p>
-                     <select name="reason" onChange={handleChange} >
+                     <p>Reason</p>
+                     <select name="reason" onChange={handleChange}>
                       <option value="">Reason</option>
-                      <option value="Buisness">For Buisness</option>
+                      <option value="Buisness">For Business</option>
                       <option value="Dealership">For Dealership</option>
-                      <option value="Tranport">For Tranport</option>
+                      <option value="Tranport">For Transport</option>
+                      <option value="Tranport">For Personal</option>
                      </select>
                      {isReasonValid?<p className='input_error'>Project theme required</p>:<></>}
                 </div>
@@ -235,7 +236,7 @@ if (
                       <option value="">Department</option>
                       <option value="Statergy">Statergy</option>
                       <option value="Finance">Finance</option>
-                      <option value="Qaulity">Qaulity</option>
+                      <option value="Qaulity">Quality</option>
                       <option value="Maintenance">Maintenance</option>
                       <option value="Stores">Stores</option>
                       <option value="HR">HR</option>
@@ -258,14 +259,14 @@ if (
                       <option value="">Location</option>
                       <option value="Pune">Pune</option>
                       <option value="Mumbai">Mumbai</option>
-                      <option value="Dilhi">Dilhi</option>
+                      <option value="Dilhi">Delhi</option>
                       <option value="Bangalore">Bangalore</option>
                      </select>
                      {isLocationValid?<p className='input_error'>Project Location required</p>:<></>}
                 </div>
               </div>
               <div style={{width:"87%",textAlign:"right",marginLeft:"15px"}}>
-              <p>status :<span style={{fontWeight:"bold",marginRight:"150px"}}> Registered</span></p>
+              <p>Status :<span style={{fontWeight:"bold",marginRight:"150px"}}> Registered</span></p>
               </div>
             </div>
         </div>
