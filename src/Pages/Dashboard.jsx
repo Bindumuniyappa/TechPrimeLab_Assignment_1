@@ -12,7 +12,7 @@ ChartJS.register(
 );
 
 const fetchProjectCounts = async () => {
-  return await axios.get("http://localhost:8080/projectsCounts");
+  return await axios.get("http://localhost:3000/projectsCounts");
 }
 
 const YourDashboardComponent = () => {

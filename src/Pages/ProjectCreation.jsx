@@ -151,7 +151,7 @@ if (
   !isDepartmentValid &&
   !isLocationValid
 ) {
-  let res = await axios.post("http://localhost:8080/createproject", projectData);
+  let res = await axios.post("http://localhost:3000/createproject", projectData);
   alert(res.data.msg);
   setTimeout(() => navigate("/projectlist"), 1000);
 }

@@ -6,7 +6,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 
 const getData=async()=>{
-  return await axios.get(`http://localhost:8080/projects`)
+  return await axios.get(`http://localhost:3000/projects`)
 }
 
 const MobileProjectList = () => {
@@ -82,15 +82,15 @@ const MobileProjectList = () => {
     }
     const handleStart=async(id)=>{
       
-      return await axios.put(`http://localhost:8080/projects/${id}`,{status:"Running"}).then(()=>getData().then((res)=>setData(res.data)))
+      return await axios.put(`http://localhost:3000/projects/${id}`,{status:"Running"}).then(()=>getData().then((res)=>setData(res.data)))
     }
     const handleClose=async(id)=>{
       
-      return await axios.put(`http://localhost:8080/projects/${id}`,{status:"Closed"}).then(()=>getData().then((res)=>setData(res.data)))
+      return await axios.put(`http://localhost:3000/projects/${id}`,{status:"Closed"}).then(()=>getData().then((res)=>setData(res.data)))
     }
     const handleCancle=async(id)=>{
       
-      return await axios.put(`http://localhost:8080/projects/${id}`,{status:"Cancelled"}).then(()=>getData().then((res)=>setData(res.data)))
+      return await axios.put(`http://localhost:3000/projects/${id}`,{status:"Cancelled"}).then(()=>getData().then((res)=>setData(res.data)))
     }
 
   return (

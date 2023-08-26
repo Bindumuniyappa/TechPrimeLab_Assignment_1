@@ -1,24 +1,28 @@
-.Login_Container{
+#login_page {
     width: 100%;
-    height: 800px;
-    background-color: rgba(221, 224, 226, 0.347);  
-}
-.Image-Container{
-    position: relative;
-}
-.LoginBgImage{
-    width: 100%;
+    background-color: black;
 }
 
-.LogoImgContainer{
-    position: absolute;
-    z-index: 1;
-    top:10% ;
-    left :48% ;
+#login_div {
+    width: 90%;
+    margin: auto;
+    background-color: white;
+
+
 }
-.login_card{
+
+#banner_img {
+    width: 100%;
+    display: block;
+}
+
+#banner_img_small {
+    display: none;
+}
+
+#login {
+
     width: 23%;
-    height: 50%;
     margin: auto;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 30px;
@@ -30,76 +34,195 @@
     background-color: white;
 }
 
-.Project_title{
-    color: white; 
-    font-size: 20px;
-    position: relative;
-    left: -90px;
-}
-
-
-.loginCard_title {
-    font-size: 18px;
-    margin-left: 100px;
-}
-
-.input_label {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    font-size: 18px;
-}
-
-.Forgot_pwd{
-    margin-top: -10px;
-    margin-left: 240px;
-    color: #2e65c2;
-}
-
-.login_card input {
-    width: 100%;
-    height: 25px;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-bottom: 10px;
-}
-
-.login_card button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 18px;
-    padding: 10px 60px;
-    cursor: pointer;
-    margin-left: 130px;
-}
-
-.login_card button:hover {
-    background-color: #0056b3;
-}
-
-.Invalid_div{
-    display:none ;
-    text-align: center;
-    color: red;
-}
-
-.input-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.input-with-image {
-    position: relative;
-}
-
-.input-image {
+#logo_img1 {
     position: absolute;
-    right: 10px;
-    /* Adjust this value to control the image's position */
-    top: 50%;
-    /* Adjust this value to vertically center the image */
-    transform: translateY(-50%);
-    cursor: pointer;
-    /* Add a pointer cursor to indicate interactivity */
+    z-index: 1;
+    left: 44%;
+    top: 10%;
+    color: rgb(225, 228, 231);
+}
+#logo_img1 p{
+    position: relative;
+    left: -50px;
+}
+
+@media only screen and (max-width: 1287px) {
+    #logo_img1 {
+        left: 43%;
+    }
+}
+
+#extra_div {
+    width: 90%;
+    height: 300px;
+    background-color: white;
+    margin: auto;
+}
+
+#extra_div p {
+    color: rgb(243, 76, 76);
+    position: absolute;
+    z-index: 1;
+    font-size: 14px;
+    left: 46%;
+    top: 93%;
+    font-weight: 500;
+}
+
+form {
+    width: 100%;
+    display: grid;
+}
+
+.label {
+    color: rgb(156, 164, 171);
+    font-size: 14px;
+    text-align: left;
+}
+
+.input {
+    width: 95%;
+    padding: 15px 2px 15px 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(156, 164, 171);
+    color: rgb(87, 92, 96);
+    outline: none;
+    font-size: 16px;
+}
+
+#password_div {
+    width: 98%;
+    display: flex;
+    border: 2px solid rgb(156, 164, 171);
+    border-radius: 5px;
+}
+
+#forgot {
+    color: #2e65c2;
+    font-weight: 500;
+    margin-bottom: -20px;
+    text-align: right;
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+.pass {
+    width: 85%;
+    border: none;
+    padding: 15px 2px 15px 10px;
+    border-radius: 5px;
+    outline: none;
+    color: rgb(87, 92, 96);
+}
+
+#password_div img {
+    width: 7%;
+    margin: auto;
+}
+
+#login_title {
+    font-size: 20px;
+    font-weight: 490;
+    color: rgb(87, 92, 96);
+}
+
+#submit {
+    font-size: 14px;
+    width: 40%;
+    height: 35px;
+    border-radius: 30px;
+    border: 1px solid #2e65c2;
+    color: white;
+    background-color: #2e65c2;
+}
+
+.err {
+    color: rgb(243, 76, 76);
+    text-align: left;
+}
+
+.err1 {
+    color: rgb(243, 76, 76);
+    text-align: left;
+    margin-left: 18px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#invalid {
+    color: rgb(243, 76, 76);
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    #login_page {
+        background-color: white;
+    }
+
+    #login_div {
+        width: 100%;
+    }
+
+    #logo_img1 {
+        left: 25%;
+        top: 12%;
+    }
+
+    #login_title {
+        margin-left: 18px;
+    }
+
+    #logo_img1 img {
+        width: 60%;
+        display: none;
+    }
+
+    #logo_img1 p {
+        position: relative;
+        font-size: 17px;
+        top: 330px;
+        color: black;
+        
+    }
+
+    #login {
+        width: 85%;
+        position: static;
+        box-shadow: none;
+        padding: none;
+        margin-bottom: 40px;
+    }
+
+    #login_title {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    #extra_div {
+        display: none;
+    }
+
+    #extra_div p {
+        display: none;
+    }
+
+    #invalid {
+        display: block;
+    }
+
+    #banner_img {
+        display: none;
+    }
+
+    #banner_img_small {
+        width: 100%;
+        display: block;
+        height: 380px;
+        margin-bottom: 1px;
+    }
+
+    #submit {
+        width: 95%;
+        font-size: 16px;
+    }
 }

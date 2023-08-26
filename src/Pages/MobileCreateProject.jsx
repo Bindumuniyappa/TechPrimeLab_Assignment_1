@@ -151,14 +151,14 @@ if (
   !isDepartmentValid &&
   !isLocationValid
 ) {
-  let res = await axios.post("http://localhost:8080/createproject", projectData);
+  let res = await axios.post("http://localhost:3000/createproject", projectData);
   alert(res.data.msg);
   setTimeout(() => navigate("/projectlist"), 1000);
 }
 
     if (projectData.theme !== "" && projectData.reason !== "" && projectData.type !== "" && projectData.division !== "" && projectData.category !== "" && projectData.start_date !== "" && projectData.end_date !== "" && projectData.priority !== "" && projectData.department !== "" && projectData.location !== "") {
       try {
-        const response = await axios.post("http://localhost:8080/createproject", projectData);
+        const response = await axios.post("http://localhost:3000/createproject", projectData);
         alert(response.data.msg);
         setTimeout(() => navigate("/projectlist"), 1000);
       } catch (error) {

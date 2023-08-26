@@ -39,7 +39,7 @@ const LoginPage = () => {
     }
     if (userCredentials.emailAddress !== "" && userCredentials.userPassword !== "") {
       try {
-        const response = await axios.post("http://localhost:8080/login", userCredentials);
+        const response = await axios.post("http://localhost:3000/login", userCredentials);
         console.log(response.data);
         if (response.data.Message === "Invalid Response") {
           setInvalidLogin(true);
@@ -58,43 +58,45 @@ const LoginPage = () => {
 
   return ( 
     <>
-    <div className='Login_Container'>
-      <div className='Image-Container'>
-        <img src={LoginBgImg} alt='LoginBgImg' className='LoginBgImage'/>
-        <div className='Login_Footer'></div>
-      </div>
-      <div className='LogoImgContainer'>
-        <img src={LogoImg} alt='Logoimg' className='LogoImg'/>
-        <p className='Project_title'>Online Project Management</p>
-      </div>
-      <div className='login_card'>
-        <form onSubmit={handleFormSubmit} >
-        <p className='loginCard_title'>Login to get started</p>
-        <div>
-        <p className='input_label'>Email</p>
-        <input placeholder='user@gmail.com' onChange={handleInputChange} name='email' type='email'/>
-        </div>
-        {emailError?<p className="err1">email is required</p>:null}
-        <div className="input-container">
-          <p className='input_label'>Password</p>
-          <div className="input-with-image">
-          <input type={showPassword ? 'text' : 'password'} name='password' placeholder='password' onChange={handleInputChange}/>
-          <img onClick={() =>setShowPassword((showPassword) => !showPassword)}src={psw_eye} alt='psw_eye' className="input-image"/>
+    <div id="login_page">
+      <div id="login_div">
+       <div className="banner_div">
+        <img id="banner_img" src={LoginBgImg} alt={LoginBgImg} />
+        <img  id="banner_img_small" src={LogoImg} alt={LogoImg} />
+       </div>
+       <div id="logo_img1">
+        <img src={LogoImg} alt={LogoImg} />
+        <p >Online Project Management</p>
+       </div>
+       <div id="login">
+         <form onSubmit={handleFormSubmit}>
+          <p id="login_title">Login to get started</p>
+          <div className='label'>
+          <p >Email</p>
+          <input className='input' type="email" name="email"  onChange={handleInputChange} />
           </div>
+          {emailError?<p className="err1">email is required</p>:<></>}
+          <div className='label'>
+          <p >Password</p>
+          <div id="password_div">
+          <input className='pass' type={showPassword ? 'text' : 'password'} name="password" onChange={handleInputChange} /> 
+          <img onClick={() =>setShowPassword((showPassword) => !showPassword)} src={psw_eye} alt={psw_eye} /> 
+          </div>
+          {passwordError?<p className="err">password is required</p>:<></>}
+          <p id="forgot">Forgot password ?</p>
+          {invalidLogin?<p id="invalid">Invalid credentials</p>:<></>}
         </div>
-         {passwordError?<p className="err">password is required</p>:<></>}
-        {/* <div>
-        <p className='input_label'>Password</p>
-        <input type='password' name='password' placeholder='password' onChange={handleInputChange}/>
-        <img src={psw_eye} alt='psw_eye'/>
-        </div> */}
-        <p className='Forgot_pwd'>forgot password ?</p>
-        <button type='submit'>login</button>
-        </form>
-      </div>
-      <div className='Invalid_div'>
-        {!invalidLogin?<p>Invalid credentials</p>:null}
-      </div>
+        <br />
+        <br />
+        <div>
+          <input id="submit" type="submit" value="Login" />
+        </div>
+      </form>
+    </div>
+    </div>
+    <div id="extra_div">
+      {invalidLogin?<p>Invalid credentials</p>:<></>}
+    </div>
     </div>
     </>
   )
