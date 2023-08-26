@@ -10,7 +10,7 @@ import {UserAuthContext} from "../Context/UserAuthContext";
 const LoginPage = () => {
   const initialValues = {
     email: "",
-    Password: "",
+    password: "",
   };
   const [showPassword, setShowPassword] = useState(false);
   const [userCredentials, setUserCredentials] = useState(initialValues);
@@ -32,12 +32,12 @@ const LoginPage = () => {
     } else {
       setEmailError(false);
     }
-    if (userCredentials.Password === "") {
+    if (userCredentials.password === "") {
       setPasswordError(true);
     } else {
       setPasswordError(false);
     }
-    if (userCredentials.email !== "" && userCredentials.Password !== "") {
+    if (userCredentials.email !== "" && userCredentials.password !== "") {
       try {
         const response = await axios.post("http://localhost:3000/login", userCredentials);
         console.log(response.data);
