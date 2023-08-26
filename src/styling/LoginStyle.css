@@ -7,8 +7,6 @@
     width: 90%;
     margin: auto;
     background-color: white;
-
-
 }
 
 #banner_img {
@@ -124,6 +122,8 @@ form {
     font-size: 20px;
     font-weight: 490;
     color: rgb(87, 92, 96);
+    position: relative;
+    left: 80px;
 }
 
 #submit {
@@ -169,7 +169,7 @@ form {
     }
 
     #login_title {
-        margin-left: 18px;
+        margin-left: 25px;
     }
 
     #logo_img1 img {

@@ -9,8 +9,8 @@ import {UserAuthContext} from "../Context/UserAuthContext";
 
 const LoginPage = () => {
   const initialValues = {
-    emailAddress: "",
-    userPassword: "",
+    email: "",
+    Password: "",
   };
   const [showPassword, setShowPassword] = useState(false);
   const [userCredentials, setUserCredentials] = useState(initialValues);
@@ -27,17 +27,17 @@ const LoginPage = () => {
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
-    if (userCredentials.emailAddress === "") {
+    if (userCredentials.email === "") {
       setEmailError(true);
     } else {
       setEmailError(false);
     }
-    if (userCredentials.userPassword === "") {
+    if (userCredentials.Password === "") {
       setPasswordError(true);
     } else {
       setPasswordError(false);
     }
-    if (userCredentials.emailAddress !== "" && userCredentials.userPassword !== "") {
+    if (userCredentials.email !== "" && userCredentials.Password !== "") {
       try {
         const response = await axios.post("http://localhost:3000/login", userCredentials);
         console.log(response.data);
@@ -54,6 +54,7 @@ const LoginPage = () => {
       }
     }
   };
+  
 
 
   return ( 
