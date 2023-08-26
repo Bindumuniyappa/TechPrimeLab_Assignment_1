@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import SideMenu from './SideMenu';
 import HeaderProjectList from './HeaderProjectList';
 import axios from 'axios';
+import "../styling/ProjectListing.css";
 import MobileProjectList from './MobileProjectList';
 
 const fetchData = async (page) => {

@@ -17,12 +17,12 @@
     display: block;
 }
 
-#Mob_project_list {
+#Mobile_project_list {
     display: none;
 }
 
 @media only screen and (max-width: 600px) {
-    #Mob_project_list {
+    #Mobile_project_list {
         display: block;
     }
 
@@ -51,7 +51,6 @@
 
 #filter_sort {
     border-radius: 10px;
-
     display: flex;
     justify-content: space-around;
     height: 60px;

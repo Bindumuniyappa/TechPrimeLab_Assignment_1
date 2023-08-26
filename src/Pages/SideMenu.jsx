@@ -23,7 +23,7 @@ const SideMenu = ({ pathname }) => {
     }
 
     const redirectCreateProject = () => {
-        setTimeout(() => navigate("/createproject"), 500);
+        setTimeout(() => navigate("/projectcreation"), 500);
     }
 
     const redirectLogout = () => {
