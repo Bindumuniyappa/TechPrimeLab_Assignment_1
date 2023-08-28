@@ -1,6 +1,6 @@
 #login_page {
     width: 100%;
-    background-color: black;
+    background-color:white;
 }
 
 #login_div {
@@ -35,13 +35,13 @@
 #logo_img1 {
     position: absolute;
     z-index: 1;
-    left: 44%;
+    left: 47%;
     top: 10%;
     color: rgb(225, 228, 231);
 }
 #logo_img1 p{
     position: relative;
-    left: -50px;
+    left: -60px;
 }
 
 @media only screen and (max-width: 1287px) {
@@ -169,7 +169,7 @@ form {
     }
 
     #login_title {
-        margin-left: 25px;
+        margin-left: 30px;
     }
 
     #logo_img1 img {
@@ -181,6 +181,7 @@ form {
         position: relative;
         font-size: 17px;
         top: 330px;
+        left: 20px;
         color: black;
         
     }
