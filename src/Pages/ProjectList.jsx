@@ -164,12 +164,12 @@ const ProjectList = () => {
                 <button onClick={handleIncrementPage}>+</button>
               </div>
             </div>
-      <div id="Mobile_project_list">
-        <MobileProjectList />
-        </div>
         </div>
         </div>
     </div>
+    <div id="Mobile_project_list" fetchData={fetchData}>
+        <MobileProjectList />
+        </div>
     </>
   );
 };

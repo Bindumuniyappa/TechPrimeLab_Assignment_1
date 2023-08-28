@@ -112,39 +112,39 @@ const YourDashboardComponent = () => {
       <SideMenu pathname={pathname} />
       <div id="child2">
          <PageHeader />
-         <div id="dhashboard_info">
-          <div className='dhashboard_info_child' >
-             <div className='dhashboard_info_one'>
+         <div id="dashboard_info">
+          <div className='dashboard_info_child' >
+             <div className='dashboard_info_one'>
              </div>
-             <div className='dhashboard_info_two'>
+             <div className='dashboard_info_two'>
                 <p className="title">Total Projects</p>
                 <p className="num">{totalProjects}</p>
             </div>
           </div>
-          <div className='dhashboard_info_child' >
-            <div className='dhashboard_info_one'></div>
-            <div className='dhashboard_info_two'>
+          <div className='dashboard_info_child' >
+            <div className='dashboard_info_one'></div>
+            <div className='dashboard_info_two'>
                 <p className="title">Closed</p>
                 <p className="num">{closedProjects}</p>
             </div>
           </div>
-          <div className='dhashboard_info_child' >
-            <div className='dhashboard_info_one'></div>
-            <div className='dhashboard_info_two'>
+          <div className='dashboard_info_child' >
+            <div className='dashboard_info_one'></div>
+            <div className='dashboard_info_two'>
                 <p className="title">Running</p>
                 <p className="num">{runningProjects}</p>
             </div>
           </div>
-          <div className='dhashboard_info_child' >
-            <div className='dhashboard_info_one'></div>
-            <div className='dhashboard_info_two'>
+          <div className='dashboard_info_child' >
+            <div className='dashboard_info_one'></div>
+            <div className='dashboard_info_two'>
                 <p className="title">Clousre Delay</p>
                 <p className="num">{closureDelays}</p>
             </div>
           </div>
-          <div className='dhashboard_info_child' >
-            <div className='dhashboard_info_one'></div>
-            <div className='dhashboard_info_two'>
+          <div className='dashboard_info_child' >
+            <div className='dashboard_info_one'></div>
+            <div className='dashboard_info_two'>
                 <p className="title">Cancelled</p>
                 <p className="num">{cancelledProjects}</p>
             </div>
@@ -161,7 +161,7 @@ const YourDashboardComponent = () => {
       </div>
     </div>
     </div>
-    <div id="Mob_dashboard_page">
+    <div id="Mobile_dashboard_page">
       <MobileDashboard  fetchProjectCounts={fetchProjectCounts}/>
     </div>
     </>

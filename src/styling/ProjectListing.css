@@ -1,7 +1,7 @@
 #create_project {
     width: 83%;
     background-color: white;
-    height: auto;
+    height:800px;
     position: absolute;
     z-index: 1;
     top: 16%;
@@ -23,7 +23,7 @@
 
 @media only screen and (max-width: 600px) {
     #Mobile_project_list {
-        display: block;
+        display:block;
     }
 
     #project_list {
@@ -34,7 +34,7 @@
 #project_list_container {
     width: 90%;
     margin: auto;
-    height: 1150px;
+    height: 900px;
     background-color: rgb(239, 244, 248);
 
 }

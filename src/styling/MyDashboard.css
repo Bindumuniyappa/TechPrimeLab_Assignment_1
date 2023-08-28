@@ -2,7 +2,7 @@
     display: block;
 }
 
-#Mob_dashboard_page {
+#Mobile_dashboard_page {
     display: none;
 }
 
@@ -97,7 +97,7 @@
     width: 100%;
 }
 
-#dhashboard_info {
+#dashboard_info {
     display: flex;
     justify-content: space-evenly;
     width: 95.6%;
@@ -108,7 +108,7 @@
 
 }
 
-.dhashboard_info_child {
+.dashboard_info_child {
     height: 95px;
     width: 18%;
     border-radius: 10px;
@@ -117,14 +117,14 @@
     display: flex;
 }
 
-.dhashboard_info_one {
+.dashboard_info_one {
     width: 2%;
     height: 100%;
     border-radius: 10px 0px 0px 10px;
     background-color: #2ccce4;
 }
 
-.dhashboard_info_two {
+.dashboard_info_two {
     width: 98%;
     height: 100%;
     border-radius: 0px 10px 10px 0px;
