@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react'
+import React, {  useState } from 'react'
 import"../styling/MobileDashboard.css"
-import axios from 'axios'
 import {Chart as ChartJS,BarElement,CategoryScale,LinearScale,Tooltip,Legend} from "chart.js"
 import {Bar} from "react-chartjs-2"
 import NavigationFooter from './NavigationFooter'
@@ -12,9 +11,9 @@ ChartJS.register(
 
 const MobileDashboard = ({getCounts}) => {
   const [count,setCount]=useState(0)
-  const [Closed,setClosed]=useState([])
-  const [Total,setTotal]=useState([])
-  const [clouser,setClouser]=useState(0)
+  // const [Closed,setClosed]=useState([])
+  // const [Total,setTotal]=useState([])
+  // const [clouser,setClouser]=useState(0)
   const [Data,setData]=useState([])
 
   const data={
@@ -59,7 +58,7 @@ const MobileDashboard = ({getCounts}) => {
                        <div className='Mobdashboard_child1_one'></div>
                        <div className='Mobdashboard_child1_two'>
                         <p className="Mobdashboard_child1_two_title">Clousre Delay</p>
-                        <p className="Mobdashboard_child1_two_num">{clouser}</p>
+                        <p className="Mobdashboard_child1_two_num">clouser</p>
                        </div>
                     </div>
                     <div className='Mobdashboard_child1_child' >
@@ -72,7 +71,7 @@ const MobileDashboard = ({getCounts}) => {
             <div id="Mobdashboard_child2"><p>Department wise - Total Vs Closed</p></div>
             <div id="Mobdashboard_child3">
             <Bar
-              data={data}
+              data={Data}
               width={"120px"}
              >
             </Bar>

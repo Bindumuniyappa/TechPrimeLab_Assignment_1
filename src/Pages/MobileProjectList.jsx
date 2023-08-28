@@ -57,8 +57,6 @@ const MobileProjectList = () => {
       }
     }
     
-
-
     const handlefiltercancle=(e)=>{
       setCan(true)
       let a=e.target.value

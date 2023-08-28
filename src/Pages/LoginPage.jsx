@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom'; 
 import axios from 'axios';
 import "../styling/LoginStyle.css";
@@ -17,7 +17,7 @@ const LoginPage = () => {
   const [emailError, setEmailError] = useState(false);
   const [passwordError, setPasswordError] = useState(false);
   const [invalidLogin, setInvalidLogin] = useState(false);
-  const { isUserLoggedIn, loginUser, logoutUser } = useContext(UserAuthContext);
+  const {  loginUser } = useContext(UserAuthContext);
   const navigateToDashboard = useNavigate();
 
   const handleInputChange = (e) => {

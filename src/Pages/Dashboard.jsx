@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState} from 'react';
 import "../styling/MyDashboard.css"
 import SideMenu from './SideMenu';
 import PageHeader from './PageHeader';
@@ -42,7 +42,7 @@ const YourDashboardComponent = () => {
       setStatusData(res.data.statusCount);
     });
   }, []);
-
+  
   useEffect(() => {
     let totalSum = 0;
 
@@ -85,7 +85,7 @@ const YourDashboardComponent = () => {
     setFailedClosed(closedNumbers);
     setFailedTotal(totalNumbers);
 
-  }, [projectCounts, statusData]);
+  }, [projectCounts, statusData,departmentDetails,departmentNames,totalNumbers]);
 
   const chartData = {
     labels: departmentData,

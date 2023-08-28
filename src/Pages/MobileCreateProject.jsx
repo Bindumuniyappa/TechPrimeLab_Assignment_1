@@ -35,7 +35,7 @@ const [checkedStartDate, setCheckedStartDate] = useState("");
 
   
   const navigate = useNavigate();
-  const pathname = window.location.pathname;
+  // const pathname = window.location.pathname;
 
       useEffect(()=>{
       const today = new Date();
