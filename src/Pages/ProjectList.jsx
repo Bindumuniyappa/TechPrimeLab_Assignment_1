@@ -48,10 +48,10 @@ const ProjectList = () => {
         })
         setProjectData([...registered,...running,...closed,...cancled])
     } else if (sortBy === 'end_date') {
-      let end=projectData.filter((el)=>el.end_date) .sort((a, b) => new Date(a.end_date) - new Date(b.end_date));
+      let end=projectData.filter((el)=>el.end_date).sort((a, b) => new Date(a.end_date)- new Date(b.end_date));
         setProjectData([...end])
     } else if (sortBy === 'start_date') {
-      let start=projectData.filter((el)=>el.start_date) .sort((a, b) => new Date(a.start_date) - new Date(b.start_date));
+      let start=projectData.filter((el)=>el.start_date).sort((a, b) => new Date(a.start_date)- new Date(b.start_date));
         setProjectData([...start])
     }
   };
