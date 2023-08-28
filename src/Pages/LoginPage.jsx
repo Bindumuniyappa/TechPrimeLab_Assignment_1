@@ -39,7 +39,7 @@ const LoginPage = () => {
     }
     if (userCredentials.email !== "" && userCredentials.password !== "") {
       try {
-        const response = await axios.post("http://localhost:3000/login", userCredentials);
+        const response = await axios.post("https://techprimelab-assignment-server-1.onrender.com", userCredentials);
         console.log(response.data);
         if (response.data.Message === "Invalid Response") {
           setInvalidLogin(true);

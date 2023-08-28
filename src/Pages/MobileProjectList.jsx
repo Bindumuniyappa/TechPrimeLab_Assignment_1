@@ -6,7 +6,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 
 const getData=async()=>{
-  return await axios.get(`http://localhost:3000/projects`)
+  return await axios.get(`https://techprimelab-assignment-server-1.onrender.com`)
 }
 
 const MobileProjectList = () => {
