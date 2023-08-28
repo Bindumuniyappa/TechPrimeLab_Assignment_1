@@ -218,7 +218,7 @@ if (
                       <option value="Quality C">Quality C</option>
                       <option value="Quality D">Quality D</option>
                      </select>
-                     {isCategoryValid?<p className='input_error'>Project Category required</p>:<></>}
+                     {isCategoryValid?<p className='input_error'>Project Category required</p>:null}
                 </div>
                 <div className='label'>
                      <p >Priority</p>
@@ -228,7 +228,7 @@ if (
                       <option value="medium">Medium</option>
                       <option value="low">Low</option>
                      </select>
-                     {isPriorityValid?<p className='input_error'>Project Priority required</p>:<></>}
+                     {isPriorityValid?<p className='input_error'>Project Priority required</p>:null}
                 </div>
                 <div className='label'>
                      <p >Department</p>
@@ -241,17 +241,17 @@ if (
                       <option value="Stores">Stores</option>
                       <option value="HR">HR</option>
                      </select>
-                     {isDepartmentValid?<p className='input_error'>Project Department required</p>:<></>}
+                     {isDepartmentValid?<p className='input_error'>Project Department required</p>:null}
                 </div>
                 <div className='label'>
                      <p >Start Date as per the Project Plan</p>
                      <input className='lable_input' onChange={handleChange} type="date" name="start_date" min={checkedStartDate} />
-                     {isStartDateValid?<p className='input_error'>Project Start Date required</p>:<></>}
+                     {isStartDateValid?<p className='input_error'>Project Start Date required</p>:null}
                 </div>
                 <div className='label'>
                      <p >End Date as per the Project Plan</p>
                      <input className='lable_input'onChange={handleChange} type="date" name="end_date" min={checkedDate} />
-                     {isEndDateValid?<p className='input_error'>Project End Date required</p>:<></>}
+                     {isEndDateValid?<p className='input_error'>Project End Date required</p>:null}
                 </div>
                 <div className='label'>
                      <p >Location</p>
@@ -262,7 +262,7 @@ if (
                       <option value="Dilhi">Delhi</option>
                       <option value="Bangalore">Bangalore</option>
                      </select>
-                     {isLocationValid?<p className='input_error'>Project Location required</p>:<></>}
+                     {isLocationValid?<p className='input_error'>Project Location required</p>:null}
                 </div>
               </div>
               <div style={{width:"87%",textAlign:"right",marginLeft:"15px"}}>

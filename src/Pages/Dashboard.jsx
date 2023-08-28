@@ -85,7 +85,7 @@ const YourDashboardComponent = () => {
     setFailedClosed(closedNumbers);
     setFailedTotal(totalNumbers);
 
-  }, [projectCounts, statusData,departmentDetails,departmentNames,totalNumbers]);
+  }, [projectCounts, statusData]);
 
   const chartData = {
     labels: departmentData,

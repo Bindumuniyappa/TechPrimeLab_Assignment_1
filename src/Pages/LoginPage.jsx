@@ -56,7 +56,6 @@ const LoginPage = () => {
   };
   
 
-
   return ( 
     <>
     <div id="login_page">
