@@ -7,7 +7,7 @@ const HeaderProjectListing = () => {
   return (
      <div id="header_container">
             <img id="header_img" src={headerBackground} alt={headerBackground} />
-            <p id="headerProjectL_p">{"<  Project Listing"}</p>
+            <p id="headerProjectL_p">{"Project Listing"}</p>
             <div id="logo_img">
               <img src={logo} alt={logo} />
             </div>
