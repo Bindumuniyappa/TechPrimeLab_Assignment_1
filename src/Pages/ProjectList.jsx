@@ -7,7 +7,7 @@ import MobileProjectList from './MobileProjectList';
 import { apiUrl } from '../constant';
 
 const fetchData = async (page) => {
-  return await axios.get(`${apiUrl}/projects`);
+  return await axios.get(`${apiUrl}/projects?limit=10&page=${page}`);
 };
 
 const ProjectList = () => {
@@ -116,7 +116,7 @@ const ProjectList = () => {
                    <option value="">Sort</option>
                    <option value="priority">Priority</option>
                    <option value="status">Status</option>
-                 <option value="start_date">State Date</option>
+                 <option value="start_date">Start Date</option>
                  <option value="end_date">End Date</option>
                  </select>
                  </div>
