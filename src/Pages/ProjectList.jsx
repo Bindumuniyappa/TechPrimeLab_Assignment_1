@@ -4,9 +4,10 @@ import HeaderProjectList from './HeaderProjectList';
 import axios from 'axios';
 import "../styling/ProjectListing.css";
 import MobileProjectList from './MobileProjectList';
+import { apiUrl } from '../constant';
 
 const fetchData = async (page) => {
-  return await axios.get(`https://techprimelab-assignment-server-1.onrender.com`);
+  return await axios.get(`${apiUrl}/projects`);
 };
 
 const ProjectList = () => {
@@ -76,15 +77,15 @@ const ProjectList = () => {
   };
 
   const handleStart = async (projectId, page) => {
-    return await axios.put(`https://techprimelab-assignment-server-1.onrender.com`,{status:"Running"}).then(()=>fetchData(page).then((res)=>setProjectData(res.data)))
+    return await axios.put(`${apiUrl}/projects/${projectId}`,{status:"Running"}).then(()=>fetchData(page).then((res)=>setProjectData(res.data)))
   };
 
   const handleClose = async (projectId, page) => {
-    return await axios.put(`https://techprimelab-assignment-server-1.onrender.com`,{status:"Closed"}).then(()=>fetchData(page).then((res)=>setProjectData(res.data)))
+    return await axios.put(`${apiUrl}/projects/${projectId}`,{status:"Closed"}).then(()=>fetchData(page).then((res)=>setProjectData(res.data)))
   };
 
   const handleCancel = async (projectId, page) => {
-    return await axios.put(`https://techprimelab-assignment-server-1.onrender.com}`,{status:"Cancelled"}).then(()=>fetchData(page).then((res)=>setProjectData(res.data)))
+    return await axios.put(`${apiUrl}/projects/${projectId}`,{status:"Cancelled"}).then(()=>fetchData(page).then((res)=>setProjectData(res.data)))
   };
 
   const handleDecrementPage = () => {

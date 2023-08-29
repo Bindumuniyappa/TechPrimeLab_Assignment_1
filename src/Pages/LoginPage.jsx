@@ -1,6 +1,7 @@
 import React, { useState,useEffect, useContext } from 'react';
 import { useNavigate } from 'react-router-dom'; 
 import axios from 'axios';
+import {apiUrl} from "../constant"
 import "../styling/LoginStyle.css";
 import psw_eye from "../Source_images/hide-password.png"
 import LogoImg from "../Source_images/Logo.png";
@@ -39,7 +40,7 @@ const LoginPage = () => {
     }
     if (userCredentials.email !== "" && userCredentials.password !== "") {
       try {
-        const response = await axios.post("https://techprimelab-assignment-server-1.onrender.com", userCredentials);
+        const response = await axios.post(`${apiUrl}/login`, userCredentials);
         console.log(response.data);
         if (response.data.Message === "Invalid Response") {
           setInvalidLogin(true);

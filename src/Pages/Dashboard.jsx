@@ -6,14 +6,14 @@ import axios from 'axios';
 import { Chart as ChartJS, BarElement, CategoryScale, LinearScale, Tooltip, Legend } from "chart.js";
 import { Bar } from "react-chartjs-2";
 import MobileDashboard from './MobileDashboard';
+import { apiUrl } from '../constant';
 
 ChartJS.register(
   BarElement, CategoryScale, LinearScale, Tooltip, Legend
 );
 
 const fetchProjectCounts = async () => {
-  return await axios.get("https://techprimelab-assignment-server-1.onrender.com");
-}
+  return await axios.get(`${apiUrl}/projects`)}
 
 const YourDashboardComponent = () => {
   const [projectCounts, setProjectCounts] = useState([]);
@@ -46,7 +46,8 @@ const YourDashboardComponent = () => {
   useEffect(() => {
     let totalSum = 0;
 
-    projectCounts.forEach(item => {
+    if(projectCounts){
+      projectCounts.forEach(item => {
       totalSum += item.total;
     });
     setTotalProjects(totalSum);
@@ -76,6 +77,7 @@ const YourDashboardComponent = () => {
     setDepartmentData(departmentDetails);
     setFailedClosed(closedNumbers);
     setFailedTotal(totalNumbers);
+    }
 
   }, [projectCounts, statusData]);
 

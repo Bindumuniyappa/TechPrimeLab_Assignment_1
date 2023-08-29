@@ -4,9 +4,10 @@ import "../styling/MobileProjectList.css"
 
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import { apiUrl } from '../constant'
 
 const getData=async()=>{
-  return await axios.get(`https://techprimelab-assignment-server-1.onrender.com`)
+  return await axios.get(`${apiUrl}/projects`)
 }
 
 const MobileProjectList = () => {
