@@ -7,7 +7,7 @@ const HeaderCreateProject = () => {
   return (
     <div id="header_container">
             <img id="header_img" src={headerBackground} alt={headerBackground} />
-            <p id="headercreateP_p">{"<  Create Project"}</p>
+            <p id="headercreateP_p">{"Create Project"}</p>
             <div id="logo_img">
               <img src={logo} alt={logo} />
             </div>

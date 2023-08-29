@@ -10,7 +10,6 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-
 #create_p_mob {
     display: none;
 }
@@ -33,7 +32,6 @@
 }
 
 #create_project_project_container {
-
     width: 90%;
     margin: auto;
     height: 1150px;
@@ -87,6 +85,7 @@
     width: 40%;
     text-align: right;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 #create_project_child2 button {
