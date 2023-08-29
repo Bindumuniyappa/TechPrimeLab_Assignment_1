@@ -134,6 +134,7 @@ form {
     border: 1px solid #2e65c2;
     color: white;
     background-color: #2e65c2;
+    cursor: pointer;
 }
 
 .err {

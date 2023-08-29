@@ -5,6 +5,7 @@ import HeaderCreateProject from './HeaderCreateProject';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import MobileCreateProject from './MobileCreateProject';
+import { apiUrl } from '../constant';
 
 const ProjectCreation = () => {
     const initialProjectState = {
@@ -151,7 +152,7 @@ if (
   !isDepartmentValid &&
   !isLocationValid
 ) {
-  let res = await axios.post("http://localhost:3000/createproject", projectData);
+  let res = await axios.post(`${apiUrl}/createproject`, projectData);
   alert(res.data.msg);
   setTimeout(() => navigate("/projectlist"), 1000);
 }

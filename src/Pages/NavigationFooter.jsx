@@ -19,7 +19,7 @@ const NavigationFooter = () => {
         <div id="Nav">
         <img id="NavAndFootbar_img" src={headerImage} alt={headerImage} />
             <div id="NavAndFootbar_div">
-              <div><p id="NavAndFootbar_p">{"<  Project Listing"}</p></div>
+              <div><p id="NavAndFootbar_p">{"Project Listing"}</p></div>
               <div id="NavAndFootbar_logout">
                   <img onClick={handleLogout} src={logoutLogo} alt={logoutLogo} />
               </div>

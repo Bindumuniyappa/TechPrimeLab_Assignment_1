@@ -13,7 +13,7 @@ ChartJS.register(
 );
 
 const fetchProjectCounts = async () => {
-  return await axios.get(`${apiUrl}/projects`)}
+  return await axios.get(`${apiUrl}/projectsCounts`)}
 
 const YourDashboardComponent = () => {
   const [projectCounts, setProjectCounts] = useState([]);
