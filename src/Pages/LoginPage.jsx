@@ -80,14 +80,14 @@ const LoginPage = () => {
           <p >Email</p>
           <input className='input' type="email" name="email"  onChange={handleInputChange} />
           </div>
-          {emailError?<p className="err1">email is required</p>:<></>}
+          {emailError?<p className="err1">Email is required</p>:<></>}
           <div className='label'>
           <p>Password</p>
           <div id="password_div">
           <input className='pass' type={showPassword ? 'text' : 'password'} name="password" onChange={handleInputChange} /> 
           <img onClick={() =>setShowPassword((showPassword) => !showPassword)} src={psw_eye} alt={psw_eye} /> 
           </div>
-          {passwordError?<p className="err">password is required</p>:<></>}
+          {passwordError?<p className="err">Password is required</p>:<></>}
           <p id="forgot">Forgot password ?</p>
           {invalidLogin?<p id="invalid">Invalid credentials</p>:<></>}
         </div>
