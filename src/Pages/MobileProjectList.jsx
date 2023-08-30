@@ -43,7 +43,7 @@ const MobileProjectList = () => {
           return el.status==="Closed"
         })
         let cancled=data.filter((el)=>{
-          return el.status==="Cancled"
+          return el.status==="Canceled"
         })
         setData([...registered,...running,...closed,...cancled])
       }
@@ -134,7 +134,7 @@ const MobileProjectList = () => {
               <div id="MobPL_child3">
                     <div><button onClick={()=>handleStart(el._id)} id="sta">Start</button></div>
                     <div><button onClick={()=>handleClose(el._id)} id="clo">Close</button></div>
-                    <div><button onClick={()=>handleCancle(el._id)} id="canc">Cancle</button></div>
+                    <div><button onClick={()=>handleCancle(el._id)} id="canc">Cancel</button></div>
               </div>
               </div>
           ))}

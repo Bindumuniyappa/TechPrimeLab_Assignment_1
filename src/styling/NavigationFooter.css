@@ -8,7 +8,6 @@
 #Nav {
     width: 100%;
     height: auto;
-
     position: fixed;
     z-index: 1;
 }
@@ -72,6 +71,7 @@
     width: 100%;
     height: 100%;
     margin: auto;
+    margin-top: 25px;
     justify-content: space-evenly;
 }
 
