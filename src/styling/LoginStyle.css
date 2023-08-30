@@ -35,18 +35,18 @@
 #logo_img1 {
     position: absolute;
     z-index: 1;
-    left: 47%;
+    left: 57%;
     top: 10%;
     color: rgb(225, 228, 231);
 }
 #logo_img1 p{
     position: relative;
-    left: -60px;
+    left: -40px;
 }
 
 @media only screen and (max-width: 1287px) {
     #logo_img1 {
-        left: 43%;
+        left: 48%;
     }
 }
 
@@ -123,7 +123,7 @@ form {
     font-weight: 490;
     color: rgb(87, 92, 96);
     position: relative;
-    left: 80px;
+    left: 45px;
 }
 
 #submit {
@@ -169,10 +169,6 @@ form {
         top: 12%;
     }
 
-    #login_title {
-        margin-left: 30px;
-    }
-
     #logo_img1 img {
         width: 60%;
         display: none;
@@ -181,9 +177,9 @@ form {
     #logo_img1 p {
         position: relative;
         font-size: 17px;
-        top: 340px;
-        left: 20px;
-        color: rgb(75, 73, 73);
+        top: -14px;
+        left: 45px;
+        color: rgb(238, 230, 230);
         
     }
 
@@ -198,6 +194,8 @@ form {
     #login_title {
         font-size: 18px;
         text-align: left;
+        margin-left: 85px;
+        margin-top: 40px;
     }
 
     #extra_div {
@@ -213,14 +211,15 @@ form {
     }
 
     #banner_img {
-        display: none;
+        display: block;
     }
 
     #banner_img_small {
-        width: 100%;
+        width: 30%;
         display: block;
-        height: 380px;
-        margin-bottom: 1px;
+        height: 30%;
+        margin-top: -150px;
+        margin-left: 190px;;
     }
 
     #submit {
