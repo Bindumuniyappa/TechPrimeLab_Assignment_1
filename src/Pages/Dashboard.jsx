@@ -156,7 +156,7 @@ const YourDashboardComponent = () => {
     </div>
     </div>
     <div id="Mobile_dashboard_page">
-      <MobileDashboard fetchProjectCounts={fetchProjectCounts} />
+      <MobileDashboard/>
     </div>
     </>
   );
