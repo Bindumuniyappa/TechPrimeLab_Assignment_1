@@ -35,7 +35,7 @@
 #logo_img1 {
     position: absolute;
     z-index: 1;
-    left: 57%;
+    left: 48%;
     top: 10%;
     color: rgb(225, 228, 231);
 }
@@ -44,7 +44,7 @@
     left: -40px;
 }
 
-@media only screen and (max-width: 1287px) {
+@media only screen and (max-width: 1350px) {
     #logo_img1 {
         left: 48%;
     }
@@ -167,11 +167,14 @@ form {
     #logo_img1 {
         left: 25%;
         top: 12%;
+       
     }
 
     #logo_img1 img {
         width: 60%;
-        display: none;
+        display: block;
+        margin-top: -106px;
+        margin-left: 55px;
     }
 
     #logo_img1 p {
@@ -215,7 +218,7 @@ form {
 
     #banner_img_small {
         width: 30%;
-        display: block;
+        display: none;
         height: 30%;
         margin-top: -140px;
         margin-left: 165px;;
