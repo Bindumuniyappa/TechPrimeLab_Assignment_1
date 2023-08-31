@@ -131,6 +131,7 @@ form {
     width: 40%;
     height: 35px;
     border-radius: 30px;
+    margin-left: 20px;
     border: 1px solid #2e65c2;
     color: white;
     background-color: #2e65c2;
@@ -225,7 +226,7 @@ form {
     }
 
     #submit {
-        width: 95%;
+        width: 90%;
         font-size: 16px;
     }
 }
