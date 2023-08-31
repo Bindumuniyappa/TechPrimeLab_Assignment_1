@@ -20,7 +20,7 @@ const Footer = () => {
     }
 
     const redirectCreateProject = () => {
-        setTimeout(() => navigate("/createproject"), 500);
+        setTimeout(() => navigate("/projectcreation"), 500);
     }
 
     const pathname = window.location.pathname;
@@ -35,7 +35,7 @@ const Footer = () => {
                     {pathname === "/projectlist" ? <img onClick={redirectProjectList} src={activeProjectList} alt="Active Project List" /> : <img onClick={redirectProjectList} src={unactiveProjectList} alt="Inactive Project List" />}
                 </div>
                 <div className='footer_child_item'>
-                    {pathname === "/createproject" ? <img onClick={redirectCreateProject} src={activeCreateProject} alt="Active Create Project" /> : <img onClick={redirectCreateProject} src={unactiveCreateProject} alt="Inactive Create Project" />}
+                    {pathname === "/projectcreation" ? <img onClick={redirectCreateProject} src={activeCreateProject} alt="Active Create Project" /> : <img onClick={redirectCreateProject} src={unactiveCreateProject} alt="Inactive Create Project" />}
                 </div>
             </div>
         </div>
